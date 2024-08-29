@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SalvaCode | Developer</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" href="media/faviconnew.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header-top">
+            <div class="logo"><img src="media/logonew1.png" alt="Logo"></div>
+            <div class="musica">
+                <button id="happyButton"><img src="media/emojicontento.png" alt="contento"></button>
+                <button id="parar"><img src="media/muted.png" alt="muted"></button>
+    
+                <button id="sadButton"><img src="media/emojitriste.png" alt="triste"></button>
+                <audio id="happySong" loop>
+                    <source src="media/alegre.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="sadSong" loop>
+                    <source src="media/triste.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+                <div class="language-switcher">
+                <a href="index.html"><img src="media/Espana.gif" alt="Español" id="flag-es"></a>
+                <a href="en-index.html"><img src="media/ReinoUnido.png" alt="English" id="flag-en" class="selected1"></a>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <nav class="nav2">
+            <ul>
+                <li class="underline"><a href="#">Back to top</a></li>
+
+                <li class="underline"><a href="#about">About me</a></li>
+                <li class="underline"><a href="#portfolio">Portfolio</a></li>
+                <li class="underline"><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <p class="dropbtn">Technologies</p>
+                    <div class="dropdown-content" id="certificado">
+                        <a href="#" data-image="java.html">Java</a>
+                        <a href="#" data-image="python.html">Python</a>
+                        <a href="#" data-image="html-css.html">HTML</a>
+                        <a href="#" data-image="html-css.html">CSS</a>
+                        <a href="#" data-image="javascript.html">Javascript</a>
+                        <a href="#">Git</a>
+
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="hero-section">
+        <img class="heroe" src="media/heroe.jpg" alt="heroe">
+        <span id="texto-adicional"></span>
+        <p id="texto-escrito"></p>
+        <a id="miEnlace" href="#contact">Contact</a>
+
+    </section>
+
+    <section id="about">
+        <img src="media/logonew1.png" alt="Salva Belenguer" id="logo">
+        <p class="scroll-anim">"Hello! I am Salva Belenguer, a passionate frontend software developer based in Valencia.
+            I have trained
+            at Openbootcamp, where I have learned essential tools such as Java, Python, Html, CSS, Javascript, Git,
+            and Typescript to build impressive web applications."</p>
+        <br>
+        <p class="scroll-anim">Although I do not have prior professional experience in the field, my enthusiasm for
+            technology and my
+            desire to learn have driven me to work hard and improve my skills. I love exploring new technologies and
+            finding creative solutions to complex problems.</p>
+        <br>
+        <p class="scroll-anim">Furthermore, I am an active and energetic person, passionate about sports and nature. I
+            believe this
+            passion helps me maintain a positive attitude, be creative, and effectively solve problems.</p>
+        <br>
+        <p class="scroll-anim">My main goal is to join a frontend software development team where I can apply my skills
+            and knowledge to
+            build high-quality web applications. I'm excited to learn and grow together with a team committed to
+            achieving success.</p>
+        <br>
+        <p class="scroll-anim">Thank you for visiting my portfolio, I hope to have the opportunity to work with you!</p>
+        <br>
+        <br>
+        <hr>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="project">
+                <img src="media/vuejs.png" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of project X-1.</p>
+                <a href="#" class="button1">View</a>
+            </div>
+            <div class="project">
+                <img src="media/misterioso.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of project X-2.</p>
+                <a href="#" class="button1">View</a>
+            </div>
+            <div class="project">
+                <img src="media/misterioso.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Description of project X-3.</p>
+                <a href="#" class="button1">View</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <img class="botella" src="media/eat.jpg" alt="botella" id="btm">
+        <p id="reto">"Hey there, liking what you see? Awesome! <br> If you're in need of a passionate and creative
+            frontend
+            developer, don't hesitate to get in touch with me. <br> Let's chat
+            and discover how we can work together to bring your project to life!"</p>
+        <div class="whats">
+            <img src="media/whatsapp.png" alt="" id="whatsapp">
+            <p>677805157</p>
+        </div>
+        <div class="correo">
+            <img src="media/mail.png" alt="" id="mail">
+            <p>info@salvacode.dev</p>
+        </div>
+        <form action="submit-form.php" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="button"></button>
+            <p id="enviar">Submit</p>
+
+        </form>
+    </section>
+    <footer>
+        <div class="container">
+            <p> Developed by SalvaCode.dev &copy; 2023</p>
+        </div>
+    </footer>
+    <script src="en-index.js"></script>
+</body>
+
+</html>
